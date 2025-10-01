@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Clash Cookies</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css"/>
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+       body {
+            background-image: url('https://images.hdqwalls.com/wallpapers/stadium-clash-royale-4k-ec.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: #6d4c41;
+            padding: 14px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        nav div {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        nav a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd54f;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 32px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4e342e;
+            font-size: 40px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            color: #6d4c41;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e0c097;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+            padding: 20px;
+            border-radius: 12px;
+            background: #fff8f0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px 0;
+        }
+
+        /* Proceed button */
+        .proceed-btn {
+            background: #6d4c41;
+            color: white;
+            font-size: 18px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .proceed-btn:hover {
+            background: #8d6e63;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+      <div class="nav-container">
+          <a href="menu.html">Home/Menu</a>
+          <a href="order.html">Order</a>
+          <a href="contact.html">Contact</a>
+      </div>
+  </nav>
+
+    <div class="container">
+        <h1>🍪 Clash Cookies 👑</h1>
+        
+        <div class="section">
+            <div id="owner-info"></div>
+        </div>
+
+        <div class="section">
+            <div id="business-hours"></div>
+        </div>
+
+        <div class="section">
+            <div id="menu"></div>
+        </div>
+
+        <div class="section">
+            <div id="allergens"></div>
+        </div>
+
+        <!-- ✅ Proceed to Order Button -->
+        <div class="section" style="text-align: center;">
+            <a href="order.html">
+                <button class="proceed-btn">🍪 Proceed to Order</button>
+            </a>
+        </div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
